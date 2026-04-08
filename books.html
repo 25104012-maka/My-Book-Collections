@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Books - Makalakshmi S</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Makalakshmi S</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html" class="active">Books</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count">(0)</span></a></li>
+                    <li><a href="track-order.html">Track Order</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Books</h1>
+                <p>Explore my collection of fiction across multiple genres</p>
+            </div>
+        </section>
+
+        <!-- Literary Fiction Category -->
+        <section class="book-category">
+            <div class="container">
+                <h2 class="category-title">Literary Fiction</h2>
+                <p class="category-description">Deep, character-driven stories with complex themes</p>
+                <div class="books-grid">
+                    
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/the-weight-of-silent-words.jpg" alt="The Weight of Silent Words">
+                        </div>
+                        <div class="book-info">
+                            <h3>The Weight of Silent Words</h3>
+                            <p class="book-description">A profound story about a retired literature professor who discovers his late wife's hidden journals, revealing secrets that challenge everything he thought he knew about their 40-year marriage and force him to confront his own unspoken truths.</p>
+                            <p class="book-price">$220.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="The Weight of Silent Words" data-price="24.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/shadows-between-us.jpg" alt="Shadows Between Us">
+                        </div>
+                        <div class="book-info">
+                            <h3>Shadows Between Us</h3>
+                            <p class="book-description">An introspective tale of two estranged siblings who reunite after their mother's death, navigating grief, childhood trauma, and the complicated love that binds families together even when they're broken.</p>
+                            <p class="book-price">$230.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="Shadows Between Us" data-price="23.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/the-last-garden-of-memory.jpg" alt="The Last Garden of Memory">
+                        </div>
+                        <div class="book-info">
+                            <h3>The Last Garden of Memory</h3>
+                            <p class="book-description">A poetic exploration of an elderly woman with early dementia who tends to her garden while her memories fade, weaving between past and present as she holds onto the essence of who she once was.</p>
+                            <p class="book-price">$212.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="The Last Garden of Memory" data-price="22.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Psychological Thriller Category -->
+        <section class="book-category">
+            <div class="container">
+                <h2 class="category-title">Psychological Thriller</h2>
+                <p class="category-description">Suspenseful mind-bending stories</p>
+                <div class="books-grid">
+                    
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/the-mirrors-truth.jpg" alt="The Mirror's Truth">
+                        </div>
+                        <div class="book-info">
+                            <h3>The Mirror's Truth</h3>
+                            <p class="book-description">A woman wakes up in a psychiatric facility with no memory of how she got there, but everyone insists she committed a terrible crime. As fragmented memories return, she questions whether she can trust her own mind—or if someone is manipulating her reality.</p>
+                            <p class="book-price">$223.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="The Mirror's Truth" data-price="22.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/whispers-in-room-304.jpg" alt="Whispers in Room 304">
+                        </div>
+                        <div class="book-info">
+                            <h3>Whispers in Room 304</h3>
+                            <p class="book-description">A hotel night manager begins hearing voices from Room 304—a room that's been locked for twenty years after a mysterious guest disappeared. When she finally enters, she uncovers a dark conspiracy that puts her own life in danger.</p>
+                            <p class="book-price">$242.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="Whispers in Room 304" data-price="21.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/the-forgotten-witness.jpg" alt="The Forgotten Witness">
+                        </div>
+                        <div class="book-info">
+                            <h3>The Forgotten Witness</h3>
+                            <p class="book-description">A forensic psychologist working on a high-profile murder case realizes the key witness may have witnessed something far more sinister than the crime itself, and now both their lives are at risk from an unseen predator.</p>
+                            <p class="book-price">$232.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="The Forgotten Witness" data-price="23.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historical Fiction Category -->
+        <section class="book-category">
+            <div class="container">
+                <h2 class="category-title">Historical Fiction</h2>
+                <p class="category-description">Stories set in compelling past eras</p>
+                <div class="books-grid">
+                    
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/letters-from-the-fallen-city.jpg" alt="Letters from the Fallen City">
+                        </div>
+                        <div class="book-info">
+                            <h3>Letters from the Fallen City</h3>
+                            <p class="book-description">Set during the siege of Leningrad in World War II, this novel follows a young woman who risks everything to deliver letters between separated families, becoming a lifeline of hope in humanity's darkest hour.</p>
+                            <p class="book-price">$250.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="Letters from the Fallen City" data-price="26.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/the-clockmakers-daughter.jpg" alt="The Clockmaker's Daughter">
+                        </div>
+                        <div class="book-info">
+                            <h3>The Clockmaker's Daughter</h3>
+                            <p class="book-description">In 1880s Victorian London, a clockmaker's daughter with an extraordinary gift for mechanical invention must navigate a male-dominated world while uncovering the truth about her mother's mysterious disappearance years earlier.</p>
+                            <p class="book-price">$252.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="The Clockmaker's Daughter" data-price="25.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/echoes-of-1942.jpg" alt="Echoes of 1942">
+                        </div>
+                        <div class="book-info">
+                            <h3>Echoes of 1942</h3>
+                            <p class="book-description">A dual-timeline story connecting a modern-day historian researching World War II resistance movements with a courageous female spy operating behind enemy lines, whose classified mission could change how we understand the war.</p>
+                            <p class="book-price">$247.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="Echoes of 1942" data-price="24.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contemporary Fiction Category -->
+        <section class="book-category">
+            <div class="container">
+                <h2 class="category-title">Contemporary Fiction</h2>
+                <p class="category-description">Modern, relatable stories about today's world</p>
+                <div class="books-grid">
+                    
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/coffee-stains-and-second-chances.jpg" alt="Coffee Stains and Second Chances">
+                        </div>
+                        <div class="book-info">
+                            <h3>Coffee Stains and Second Chances</h3>
+                            <p class="book-description">A burned-out advertising executive quits her job and opens a small coffee shop in her hometown, reconnecting with her past, healing old wounds, and discovering that success isn't always measured in promotions and paychecks.</p>
+                            <p class="book-price">$212.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="Coffee Stains and Second Chances" data-price="21.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/the-art-of-letting-go.jpg" alt="The Art of Letting Go">
+                        </div>
+                        <div class="book-info">
+                            <h3>The Art of Letting Go</h3>
+                            <p class="book-description">After a devastating divorce, a single father learns to rebuild his life while raising his teenage daughter, exploring themes of masculinity, vulnerability, and what it truly means to be present for the people you love.</p>
+                            <p class="book-price">$244.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="The Art of Letting Go" data-price="22.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/bridges-we-build.jpg" alt="Bridges We Build">
+                        </div>
+                        <div class="book-info">
+                            <h3>Bridges We Build</h3>
+                            <p class="book-description">An architect designing a controversial bridge project finds her professional and personal life colliding when she must choose between her career ambitions and the community fighting to preserve their neighborhood's heritage.</p>
+                            <p class="book-price">$230.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="Bridges We Build" data-price="23.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mystery/Crime Fiction Category -->
+        <section class="book-category">
+            <div class="container">
+                <h2 class="category-title">Mystery/Crime Fiction</h2>
+                <p class="category-description">Detective or crime-solving narratives</p>
+                <div class="books-grid">
+                    
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/the-vanishing-at-hollow-creek.jpg" alt="The Vanishing at Hollow Creek">
+                        </div>
+                        <div class="book-info">
+                            <h3>The Vanishing at Hollow Creek</h3>
+                            <p class="book-description">When three hikers disappear without a trace in a small mountain town, a disgraced detective returns to her hometown to investigate, uncovering a pattern of disappearances spanning decades and a truth the town has been hiding.</p>
+                            <p class="book-price">$235.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="The Vanishing at Hollow Creek" data-price="22.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/detective-mayas-last-case.jpg" alt="Detective Maya's Last Case">
+                        </div>
+                        <div class="book-info">
+                            <h3>Detective Maya's Last Case</h3>
+                            <p class="book-description">On the eve of her retirement, Detective Maya Cruz takes on one final case—a cold murder from 15 years ago. But as she digs deeper, she realizes this case is connected to the one mistake that has haunted her entire career.</p>
+                            <p class="book-price">$211.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="Detective Maya's Last Case" data-price="21.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card-detailed">
+                        <div class="book-cover">
+                            <img src="images/secrets-of-the-harbor.jpg" alt="Secrets of the Harbor">
+                        </div>
+                        <div class="book-info">
+                            <h3>Secrets of the Harbor</h3>
+                            <p class="book-description">A maritime investigator uncovers evidence of smuggling operations in a picturesque coastal town, but the deeper she investigates, the more she realizes everyone—including her own family—may be involved in the conspiracy.</p>
+                            <p class="book-price">$254s.99</p>
+                            <button class="btn btn-primary add-to-cart" data-book="Secrets of the Harbor" data-price="23.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Makalakshmi S. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/25104012-maka" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/makalakshmi-s-50bb81367" target="_blank">LinkedIn</a>
+                <a href="mailto:makalakshmi2008@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order - Makalakshmi S</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Makalakshmi S</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count">(0)</span></a></li>
+                    <li><a href="track-order.html" class="active">Track Order</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Track Your Order</h1>
+                <p>Enter your order number to check the status</p>
+            </div>
+        </section>
+
+        <section class="track-section">
+            <div class="container">
+                <div class="track-form-container">
+                    <form id="track-form" class="track-form">
+                        <div class="form-group">
+                            <label for="order-number">Order Number</label>
+                            <input type="text" id="order-number" name="order-number" placeholder="e.g., ORD-2026-12345" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-track">Email Address</label>
+                            <input type="email" id="email-track" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Track Order</button>
+                    </form>
+                </div>
+
+                <!-- Order Status Display (Hidden by default) -->
+                <div id="order-status" class="order-status" style="display: none;">
+                    <h2>Order Status</h2>
+                    <div class="order-info">
+                        <div class="info-row">
+                            <span class="label">Order Number:</span>
+                            <span id="display-order-number" class="value"></span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">Order Date:</span>
+                            <span id="display-order-date" class="value"></span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">Status:</span>
+                            <span id="display-order-status" class="value status-badge"></span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">Estimated Delivery:</span>
+                            <span id="display-delivery-date" class="value"></span>
+                        </div>
+                    </div>
+
+                    <div class="tracking-timeline">
+                        <h3>Order Timeline</h3>
+                        <div class="timeline">
+                            <div class="timeline-item" id="status-placed">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Order Placed</h4>
+                                    <p id="date-placed">Pending</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="status-processing">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Processing</h4>
+                                    <p id="date-processing">Pending</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="status-shipped">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Shipped</h4>
+                                    <p id="date-shipped">Pending</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="status-delivered">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Delivered</h4>
+                                    <p id="date-delivered">Pending</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-items">
+                        <h3>Order Items</h3>
+                        <div id="tracked-items-list"></div>
+                    </div>
+
+                    <button id="track-another" class="btn btn-secondary">Track Another Order</button>
+                </div>
+
+                <!-- No Order Found Message -->
+                <div id="no-order-found" class="no-order-found" style="display: none;">
+                    <p>No order found with the provided information. Please check your order number and email address.</p>
+                    <button id="try-again" class="btn btn-secondary">Try Again</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Makalakshmi S. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/25104012-maka" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/makalakshmi-s-50bb81367" target="_blank">LinkedIn</a>
+                <a href="mailto:makalakshmi2008@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
