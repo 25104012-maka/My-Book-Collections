@@ -1,4 +1,4 @@
-// Cart management using localStorage
+
 function getCart() {
     return JSON.parse(localStorage.getItem('cart')) || [];
 }
