@@ -49,7 +49,7 @@ function showNotification(message) {
     notif._timeout = setTimeout(() => { notif.style.opacity = '0'; }, 2500);
 }
 
-// Attach Add to Cart buttons
+
 document.querySelectorAll('.add-to-cart').forEach(btn => {
     btn.addEventListener('click', () => {
         const bookName = btn.getAttribute('data-book');
@@ -58,7 +58,7 @@ document.querySelectorAll('.add-to-cart').forEach(btn => {
     });
 });
 
-// ---- CART PAGE ----
+
 function renderCart() {
     const cartEmpty = document.getElementById('cart-empty');
     const cartContent = document.getElementById('cart-content');
@@ -139,7 +139,7 @@ function updateSummary(cart) {
     if (checkoutTotal) checkoutTotal.textContent = `$${total.toFixed(2)}`;
 }
 
-// Checkout button
+
 const checkoutBtn = document.getElementById('checkout-btn');
 if (checkoutBtn) {
     checkoutBtn.addEventListener('click', () => {
@@ -149,7 +149,7 @@ if (checkoutBtn) {
     });
 }
 
-// Back to cart
+
 const backBtn = document.getElementById('back-to-cart');
 if (backBtn) {
     backBtn.addEventListener('click', () => {
@@ -158,7 +158,7 @@ if (backBtn) {
     });
 }
 
-// Place order
+
 const orderForm = document.getElementById('order-form');
 if (orderForm) {
     orderForm.addEventListener('submit', (e) => {
@@ -175,6 +175,6 @@ if (orderForm) {
     });
 }
 
-// Init
+
 updateCartCount();
 renderCart();
